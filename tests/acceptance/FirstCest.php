@@ -4,6 +4,15 @@
 
 class FirstCest
 {
+    private function nextPageAvailable($page){
+	/*TDO function that will check if there is next pagination page available to check*/    	
+	if($page==1)
+	{
+		return TRUE;	
+	}
+	return FALSE;
+    }
+
     public function _before(AcceptanceTester $I)
     {
     }
@@ -93,11 +102,24 @@ class FirstCest
         
     }
 
-public function paginationTest(AcceptanceTester $I)
+    public function paginationTest(AcceptanceTester $I)
     {
-        //TDO
- 	//check if every pagination page work and is accessible
-        
+    /*
+ 	check if every pagination page work and is accessible
+    */
+	$I->amOnPage('/');
+	$I->fillField(['id' => 'horus-querytext'],"Berlin");
+	$I->click(['class' => 'horus-btn-search']);
+	$page_number=1;
+	/* TDO make while loop working
+	while (nextPageAvailable($page_number)){
+		//add helper with function nextPageAvailable
+		$previous_page_deals=$I->grabTextFrom('js_item_list_section');
+		//TDO click on next available page
+		$current_page_deals=$I->grabTextFrom('js_item_list_section');
+		$page_number++;
+		//TDO compare if current page is different than previous page
+	}*/
     }
 
 }
