@@ -28,11 +28,23 @@ class FirstCest
     }
     public function changeCurrency(AcceptanceTester $I)
     {
-	$currencies = array("PLN","AED","USD");
-	//TDO
-	//Test change currency to every possible at trivago
-	// after change it will  check if proper currency is displayed
-	
+   	/*
+    Test change currency to every possible at trivago
+    after change it will  check if proper currency is displayed
+	*/
+	$currencies = array(	"PLN" => "zł"/*,
+				"GBP" => "£",
+				"USD" => "$",
+				"EUR" => "€"*/);
+	//TDO add all supported currencies
+	$I->amOnPage('/');
+	$I->click(['class' => 'horus-btn-search']); //it doesn't matter what city we search for this test - random city is fine
+	foreach ($currencies as $currency => $symbol){
+		//TDO selecting of new currency
+		//$I->selectOption('form select[id="currency"]', $currency);
+		$I->see($symbol);
+	}
+
     }
 
     public function changeCountry(AcceptanceTester $I)
