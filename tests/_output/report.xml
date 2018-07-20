@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="acceptance" tests="5" assertions="4" errors="0" failures="0" skipped="0" time="1.176524">
-    <testcase file="/tests/acceptance/FirstCest.php" name="basicSearchResults" class="FirstCest" feature="basic search results" assertions="4" time="1.176376"/>
-    <testcase file="/tests/acceptance/FirstCest.php" name="changeCurrency" class="FirstCest" feature="change currency" assertions="0" time="0.000051"/>
-    <testcase file="/tests/acceptance/FirstCest.php" name="changeCountry" class="FirstCest" feature="change country" assertions="0" time="0.000039"/>
-    <testcase file="/tests/acceptance/FirstCest.php" name="checkSortingOrder" class="FirstCest" feature="check sorting order" assertions="0" time="0.000029"/>
-    <testcase file="/tests/acceptance/FirstCest.php" name="paginationTest" class="FirstCest" feature="pagination test" assertions="0" time="0.000029"/>
+  <testsuite name="acceptance" tests="5" assertions="9" errors="0" failures="0" skipped="0" time="5.672105">
+    <testcase file="/tests/acceptance/FirstCest.php" name="basicSearchResults" class="FirstCest" feature="basic search results" assertions="6" time="1.276782"/>
+    <testcase file="/tests/acceptance/FirstCest.php" name="changeCurrency" class="FirstCest" feature="change currency" assertions="1" time="1.122309"/>
+    <testcase file="/tests/acceptance/FirstCest.php" name="changeCountry" class="FirstCest" feature="change country" assertions="2" time="1.094876"/>
+    <testcase file="/tests/acceptance/FirstCest.php" name="checkSortingOrder" class="FirstCest" feature="check sorting order" assertions="0" time="1.099588"/>
+    <testcase file="/tests/acceptance/FirstCest.php" name="paginationTest" class="FirstCest" feature="pagination test" assertions="0" time="1.078550"/>
   </testsuite>
 </testsuites>
