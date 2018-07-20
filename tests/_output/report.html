@@ -215,7 +215,7 @@
      <li> <a href="#" title="Incomplete" onClick="toggleScenarios('scenarioIncomplete', this.parentElement)"><strong>I</strong> 0</a></li>
    </ul>
  <div class="layout">
- <h1>Codeception Results <small><span style="color: green">OK</span> (1.2s)</small></h1>
+ <h1>Codeception Results <small><span style="color: green">OK</span> (5.7s)</small></h1>
 
 
 
@@ -227,7 +227,7 @@
 </tr>   <tr class="scenarioRow scenarioSuccess">
     <td>
      <p class="scenarioSuccess" onclick="showHide('1', this)"><span class="toggle">+</span>
-          <span class="quiet">FirstCest &raquo;</span> Basic search results <span style="color: #34495e; font-size: 70%;">1.18s</span></p>
+          <span class="quiet">FirstCest &raquo;</span> Basic search results <span style="color: #34495e; font-size: 70%;">1.28s</span></p>
     </td>
    </tr>
    <tr class="scenarioRow scenarioSuccess">
@@ -287,6 +287,30 @@
        <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I see <span style="color: #732E81">&quot;Lublin&quot;</span></td>
       </tr>
 
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">{&quot;id&quot;:&quot;horus-querytext&quot;},&quot;Szczecin&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">{&quot;class&quot;:&quot;horus-btn-search&quot;}</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I see <span style="color: #732E81">&quot;Szczecin&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">{&quot;id&quot;:&quot;horus-querytext&quot;},&quot;Berlin&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">{&quot;class&quot;:&quot;horus-btn-search&quot;}</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I see <span style="color: #732E81">&quot;Berlin&quot;</span></td>
+      </tr>
+
 
          
          
@@ -300,8 +324,8 @@
 
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <p class="scenarioSuccess" onclick="showHide('2', this)">
-          <span class="quiet">FirstCest &raquo;</span> Change currency <span style="color: #34495e; font-size: 70%;">0s</span></p>
+     <p class="scenarioSuccess" onclick="showHide('2', this)"><span class="toggle">+</span>
+          <span class="quiet">FirstCest &raquo;</span> Change currency <span style="color: #34495e; font-size: 70%;">1.12s</span></p>
     </td>
    </tr>
    <tr class="scenarioRow scenarioSuccess">
@@ -309,6 +333,18 @@
      <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer2">
 
 
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I am on page <span style="color: #732E81">&quot;/&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">{&quot;class&quot;:&quot;horus-btn-search&quot;}</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I see <span style="color: #732E81">&quot;zł&quot;</span></td>
+      </tr>
+
 
          
          
@@ -322,8 +358,8 @@
 
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <p class="scenarioSuccess" onclick="showHide('3', this)">
-          <span class="quiet">FirstCest &raquo;</span> Change country <span style="color: #34495e; font-size: 70%;">0s</span></p>
+     <p class="scenarioSuccess" onclick="showHide('3', this)"><span class="toggle">+</span>
+          <span class="quiet">FirstCest &raquo;</span> Change country <span style="color: #34495e; font-size: 70%;">1.09s</span></p>
     </td>
    </tr>
    <tr class="scenarioRow scenarioSuccess">
@@ -331,6 +367,22 @@
      <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer3">
 
 
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I am on url <span style="color: #732E81">&quot;https://trivago.pl&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I see <span style="color: #732E81">&quot;Znajdź swój idealny hotel i porównuj ceny z wielu stron&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">{&quot;class&quot;:&quot;horus-btn-search&quot;}</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I see <span style="color: #732E81">&quot;Zobacz ofertę&quot;</span></td>
+      </tr>
+
 
          
          
@@ -344,8 +396,8 @@
 
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <p class="scenarioSuccess" onclick="showHide('4', this)">
-          <span class="quiet">FirstCest &raquo;</span> Check sorting order <span style="color: #34495e; font-size: 70%;">0s</span></p>
+     <p class="scenarioSuccess" onclick="showHide('4', this)"><span class="toggle">+</span>
+          <span class="quiet">FirstCest &raquo;</span> Check sorting order <span style="color: #34495e; font-size: 70%;">1.1s</span></p>
     </td>
    </tr>
    <tr class="scenarioRow scenarioSuccess">
@@ -353,6 +405,10 @@
      <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer4">
 
 
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I am on page <span style="color: #732E81">&quot;/&quot;</span></td>
+      </tr>
+
 
          
          
@@ -366,14 +422,26 @@
 
    <tr class="scenarioRow scenarioSuccess">
     <td>
-     <p class="scenarioSuccess" onclick="showHide('5', this)">
-          <span class="quiet">FirstCest &raquo;</span> Pagination test <span style="color: #34495e; font-size: 70%;">0s</span></p>
+     <p class="scenarioSuccess" onclick="showHide('5', this)"><span class="toggle">+</span>
+          <span class="quiet">FirstCest &raquo;</span> Pagination test <span style="color: #34495e; font-size: 70%;">1.08s</span></p>
     </td>
    </tr>
    <tr class="scenarioRow scenarioSuccess">
     <td>
      <table border="0" width="100%" class="scenarioSuccess scenarioStepsTable" id="stepContainer5">
 
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I am on page <span style="color: #732E81">&quot;/&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I fill field <span style="color: #732E81">{&quot;id&quot;:&quot;horus-querytext&quot;},&quot;Berlin&quot;</span></td>
+      </tr>
+
+      <tr>
+       <td class="stepName ">&nbsp;&nbsp;&nbsp;&nbsp;I click <span style="color: #732E81">{&quot;class&quot;:&quot;horus-btn-search&quot;}</span></td>
+      </tr>
 
 
          
